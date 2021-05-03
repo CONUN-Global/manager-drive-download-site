@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600&display=swap");
+
+body {
+  --blue-18: #184186;
+  --grey-C4: #c4c4c4;
+  --grey-E9: #e9ebef;
+  --grey-E0: #e0e0e0;
+
+  margin: 0;
+  padding: 0;
+
+  
+}
+:root {
+  font-size:24px;
+}
+* {
+  font-family: "Barlow", sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+#manager,
+#drive,
+#downloads {
+  background-color: #f2f2f2;
+}
+
+p,
+ul {
+  margin-block: 0;
+  padding-inline-start: 5px;
+} // reset paragraph spacing
+
+.page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 880px;
+  justify-content: center;
+  padding:40px;
+  width: 100vw;
+
+  .page-header {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+}
+
+#footer {
+  height: 300px;
+}
+
+.pros-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+
+  .cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 28vw;
+    }
+  }
+
+  .dlcell {
+    justify-content: flex-start;
+    width: 90%;
+    height: 400px;
+
+    ul {
+      align-self: flex-start;
+      margin: 10px 3px 3px 30px;
+      li {
+        list-style: none;
+        margin: 5px;
+        a {
+          color: #444;
+        }
+      }
+    }
+  }
+}
+
+.illust {
+  width:40vw;
+  height: auto;
+}
+
+.side-by-side {
+  align-items: center;
+  display: flex;
+  min-height: 600px;
+  justify-content: space-evenly;
+  width: 100%;
+
+  > div {
+    margin:20px;
+  }
+
+}
+
+.wordsCell {
+  display: flex;
+  min-height: 500px;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 475px;
+
+  & .title {
+    max-width: 500px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  & p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-width: 580px;
+  }
+}
+
+.wordsCellR {
+  align-items: center;
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  max-width: 485px;
+
+  & .title {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  & p {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+// Media queries
+
+@media only screen and (max-width: 900px) {
+  .side-by-side {
+    flex-direction: column-reverse;
+    padding-top:100px;
+  }
+  #manager .side-by-side {
+    flex-direction: column;
+  }
+
+  .wordsCell, .wordsCellR {
+    align-items: center;
+  }
+
+  .wordsCell > p, .title {
+    text-align: center !important;
+  }
+  .wordsCellR > p,  .title{
+    text-align: center !important;
+  }
+
+  .pros-table {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    .cell{
+      img{
+        width:70vw;
+      }
+    }
+    .dlcell{
+      width:90%;
+    }
+  }
+
+  .illust {
+    max-width:400px;
+  }
+
+  #mac_dls {
+    height:250px;
+  }
+  #contact-links {
+    height:120px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  :root {
+    font-size: 16px;
+  }
+  .page {
+    padding:5px;
+  }
+  .dlcell img {
+    display:none;
+  }
+  .dlcell ul {
+    width:90% !important;
+    margin:3px !important;
+    padding-inline-start: 5px;
+  }
+}
