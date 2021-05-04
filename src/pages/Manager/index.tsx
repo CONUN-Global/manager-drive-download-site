@@ -3,7 +3,7 @@ import managerImg from "../../assets/managerico.svg";
 
 function Manager() {
   return (
-    <SideBySide id="manager" title="CONUN MANAGER" image={managerImg}>
+    <SideBySide id="manager" title="CONUN MANAGER" image={managerImg} reverse>
       <p>
         Our new cryptocurrency manager keeps your existing wallets together
         securely.

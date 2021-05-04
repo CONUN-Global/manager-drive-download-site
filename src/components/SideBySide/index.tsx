@@ -16,8 +16,11 @@ function SideBySide({
   children,
   image
 }:Props){
+
+  const baseStyle = reverse? `${style.sideBySide} ${style.reverse}` : style.sideBySide 
+
   return <div className={style.page} id={id}>
-    <div className={style.sideBySide}>
+    <div className={baseStyle}>
       <div className={style.wordsCell}>
         <div className={style.title}>
           {title}

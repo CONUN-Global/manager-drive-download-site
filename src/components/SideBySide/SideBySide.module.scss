@@ -20,13 +20,18 @@
   display: flex;
   min-height: 600px;
   justify-content: space-evenly;
+  flex-direction: row;
   width: 100%;
 
   > div {
     margin:20px;
   }
-
+  
 }
+.reverse {
+  flex-direction: row-reverse;
+}
+
 
 .illust {
   width:40vw;
