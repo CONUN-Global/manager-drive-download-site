@@ -1,0 +1,29 @@
+.page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 880px;
+  justify-content: center;
+  padding:40px;
+  width: 100vw;
+
+  .page-header {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+}
+
+.side-by-side {
+  align-items: center;
+  display: flex;
+  min-height: 600px;
+  justify-content: space-evenly;
+  width: 100%;
+
+  > div {
+    margin:20px;
+  }
+
+}
