@@ -18,27 +18,14 @@
   }
 }
 
-.os {
-  align-items: center;
-  background-color: var(--blue-18);
-  border-radius: 5px;
-  color: white;
-  display: flex;
-  grid-column: 1 / span 2;
-  min-height: 90px;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom:30px;
-  padding:10px;
-  width: 100%;
-.label {
-  text-align: center;
+.links {
+  align-self: flex-start;
+  margin: 10px 3px 3px 30px;
 }
-.OSIcon {
-  margin-left:20px;
-  width:40px !important;
-    height: auto;
+
+@media only screen and (max-width: 500px) {
+
+  #macDownloads {
+    height:200px;
   }
 }
