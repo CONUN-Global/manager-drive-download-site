@@ -4,7 +4,10 @@ import windowsLogo from "../../assets/windowsLogo.svg";
 import appleLogo from "../../assets/appleLogo.svg";
 import ubuntuLogo from "../../assets/ubuntuLogo.svg";
 
+import dlLinks from "../../config/downloadURLS.json"
+
 import style from "./Downloads.module.scss";
+
 
 function ALink({
   to,
@@ -40,7 +43,7 @@ function Downloads() {
           </div>
           <ul className={style.bothLinks}>
             <ALink
-              to="https://github.com/CONUN-Global/conun-main-dapplication/releases/download/v0.1.0-beta/Conun.Drive.And.Manager.WINDOWS.0.1.0.zip"
+              to={dlLinks.windows.both}
               id="win_default"
             >
               Manager &amp; Drive (64 Bit) .zip File
@@ -49,7 +52,7 @@ function Downloads() {
           </ul>
           <ul className={style.managerLinks}>
             <ALink
-              to="https://github.com/CONUN-Global/conun-main-dapplication/releases/download/v0.1.0-beta/Conun.Manager.Setup.0.1.0-beta.exe"
+              to={dlLinks.windows.manager}
               id="win_manager"
             >
               Manager Installer (64 Bit)
@@ -57,7 +60,7 @@ function Downloads() {
           </ul>
           <ul className={style.driveLinks}>
             <ALink
-              to="https://github.com/CONUN-Global/conun-drive/releases/download/v0.1.0-beta/Conun.Drive.Setup.0.1.0-beta.exe"
+              to={dlLinks.windows.drive}
               id="win_drive"
             >
               Drive Installer (64 Bit)
@@ -72,7 +75,7 @@ function Downloads() {
 
           <ul className={style.managerLinks}>
             <ALink
-              to="https://github.com/CONUN-Global/conun-main-dapplication/releases/download/v0.1.0-beta/Conun.Manager-0.1.0-beta.dmg"
+              to={dlLinks.mac.manager}
               id="mac_manager"
             >
               Manager .dmg Installer
@@ -87,7 +90,7 @@ function Downloads() {
           </div>
           <ul className={style.bothLinks}>
             <ALink
-              to="https://github.com/CONUN-Global/conun-main-dapplication/releases/download/v0.1.0-beta/Conun.Drive.And.Manager.LINUX.0.1.0.zip"
+              to={dlLinks.linux.both}
               target="_blank"
               id="linux_default"
             >
@@ -96,7 +99,7 @@ function Downloads() {
           </ul>
           <ul className={style.managerLinks}>
             <ALink
-              to="https://github.com/CONUN-Global/conun-main-dapplication/releases/download/v0.1.0-beta/conun-manager_0.1.0-beta_amd64.deb"
+              to={dlLinks.linux.manager}
               target="_blank"
               id="linux_manager"
             >
@@ -105,7 +108,7 @@ function Downloads() {
           </ul>
           <ul className={style.driveLinks}>
             <ALink
-              to="https://github.com/CONUN-Global/conun-drive/releases/download/v0.1.0-beta/conun-drive_0.1.0-beta_amd64.deb"
+              to={dlLinks.linux.drive}
               target="_blank"
               id="linux_drive"
             >
