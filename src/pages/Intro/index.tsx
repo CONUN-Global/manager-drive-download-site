@@ -4,6 +4,7 @@ import { getPlatform } from "../../utilities/functions";
 import MainImage from "../../assets/glacksy.svg";
 
 import style from "./Intro.module.scss";
+import SideBySide from "../../components/SideBySide";
 
 function Intro() {
   const platform = getPlatform();
@@ -30,12 +31,12 @@ function Intro() {
     platformLabel = "DOWNLOAD MANAGER + DRIVE .ZIP";
   }
 
-  return (
-    <div className="page" id="intro">
-      <div className="side-by-side">
-        <div className="wordsCell">
-          <div className="title">Introducing CONUN MANAGER and DRIVE</div>
-          <p>
+  return <SideBySide 
+            id="intro" 
+            title="Introducing CONUN MANAGER and DRIVE"
+            image={MainImage}
+          >
+            <p>
             Download and get free access to the CONUN manager and CONUN drive
             services. A new way to manage your cryptocurrency and discover
             endless digital assets.
@@ -59,12 +60,8 @@ function Intro() {
                 </a>
               </>
             )}
-          </div>
-        </div>
-        <img src={MainImage} className="illust" alt=""/>
-      </div>
-    </div>
-  );
+            </div>
+          </SideBySide>
 }
 
 export default Intro;
