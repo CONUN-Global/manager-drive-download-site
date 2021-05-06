@@ -44,7 +44,9 @@ function Intro() {
             <Button click={handleDL}>
               <div>
                 <span className={style.main}>{platformLabel}</span>
+                {platform && 
                 <span className={style.sub}> FOR {platform}</span>
+                }
               </div>
             </Button>
             {platform && (
