@@ -1,0 +1,99 @@
+.page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 880px;
+  justify-content: center;
+  padding:40px;
+  width: 100vw;
+
+  .page-header {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+}
+
+.sideBySide {
+  align-items: center;
+  display: flex;
+  min-height: 600px;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+
+  > div {
+    margin:20px;
+  }
+  
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+
+
+.illust {
+  width:40vw;
+  height: auto;
+}
+
+.wordsCell {
+  display: flex;
+  min-height: 500px;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 475px;
+
+  & .title {
+    max-width: 500px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  & p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-width: 580px;
+  }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  .sideBySide {
+    flex-direction: column-reverse;
+    padding-top:100px;
+  }
+  #manager .sideBySide{
+    flex-direction: column;
+  }
+
+  .wordsCell, .wordsCellR {
+    align-items: center;
+  }
+
+  .wordsCell > p, .title {
+    text-align: center !important;
+  }
+  .wordsCellR > p,  .title{
+    text-align: center !important;
+  }
+
+  .illust {
+    max-width:400px;
+  }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+  :root {
+    font-size: 16px;
+  }
+  .page {
+    padding:5px;
+  }
+}
