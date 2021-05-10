@@ -1,8 +1,8 @@
 {
   "windows": {
-    "both": "https://github.com/CONUN-Global/conun-main-dapplication/releases/download/v0.1.0-beta/Conun.Drive.And.Manager.WINDOWS.0.1.0.zip",
+    "both": "https://github.com/CONUN-Global/conun-main-dapplication/releases/download/v0.1.1-beta/win-zip-manager-drive.zip",
     "manager" : "https://github.com/CONUN-Global/conun-main-dapplication/releases/download/v0.1.1-beta/Conun.Manager.Setup.0.1.1-beta.exe",
-    "drive": "https://github.com/CONUN-Global/conun-drive/releases/download/v0.1.0-beta/Conun.Drive.Setup.0.1.0-beta.exe" 
+    "drive": "https://github.com/CONUN-Global/conun-drive/releases/download/v0.1.1-beta/Conun.Drive.Setup.0.1.1-beta.exe" 
   },
   "mac": {
     "both": "",
@@ -10,9 +10,9 @@
     "drive": "" 
   },
   "linux": {
-    "both": "https://github.com/CONUN-Global/conun-main-dapplication/releases/download/v0.1.0-beta/Conun.Drive.And.Manager.LINUX.0.1.0.zip",
+    "both": "https://github.com/CONUN-Global/conun-main-dapplication/releases/download/v0.1.1-beta/lin-zip-manager-drive.zip",
     "manager" : "https://github.com/CONUN-Global/conun-main-dapplication/releases/download/v0.1.1-beta/conun-manager_0.1.1-beta_amd64.deb",
-    "drive": "https://github.com/CONUN-Global/conun-drive/releases/download/v0.1.0-beta/conun-drive_0.1.0-beta_amd64.deb"
+    "drive": "https://github.com/CONUN-Global/conun-drive/releases/download/v0.1.1-beta/conun-drive_0.1.1-beta_amd64.deb"
   }
 }
 
