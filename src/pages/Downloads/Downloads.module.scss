@@ -1,31 +1,4 @@
-.table {
-  display: grid;
-}
-
-.cell {
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:12px;
-
-  button {
-    background-color: var(--grey-E0);
-    color:black;
-    font-size: 18px;
-  }
-
-  & .big {
-    grid-column: 1 / span 2;
-  }
-}
-
-.links {
-  align-self: flex-start;
-  margin: 10px 3px 3px 30px;
-}
-
-@media only screen and (max-width: 500px) {
-
-  #macDownloads {
-    height:200px;
-  }
+.Version {
+  font-size: 0.6rem;
+  color:var(--grey-C4);
 }

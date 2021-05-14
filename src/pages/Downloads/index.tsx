@@ -8,6 +8,8 @@ import ubuntuLogo from "../../assets/ubuntuLogo.svg";
 
 import dlLinks from "../../config/downloadURLS.json";
 
+import style from "./Downloads.module.scss"
+
 
 function Downloads() {
   return (
@@ -22,11 +24,13 @@ function Downloads() {
         <ALink to={dlLinks.windows.drive} id="win_drive">
           Drive Installer (64 Bit)
         </ALink>
+        <span className={style.Version}>Ver. {dlLinks.windows.version}</span>
       </DLCell>
       <DLCell title="Mac" image={appleLogo} id="mac-downloads">
         <ALink to={dlLinks.mac.manager} id="mac_manager">
           Manager .dmg Installer
         </ALink>
+        <span className={style.Version}>Ver. {dlLinks.windows.version}</span>
       </DLCell>
       <DLCell title="Linux" image={ubuntuLogo} id="linux-downloads">
         <ALink to={dlLinks.linux.both} target="_blank" id="linux_default">
@@ -38,6 +42,7 @@ function Downloads() {
         <ALink to={dlLinks.linux.drive} target="_blank" id="linux_drive">
           Drive .deb Installer
         </ALink>
+        <span className={style.Version}>Ver. {dlLinks.windows.version}</span>
       </DLCell>
     </TripleTable>
   );
