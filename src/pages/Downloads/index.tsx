@@ -8,9 +8,6 @@ import ubuntuLogo from "../../assets/ubuntuLogo.svg";
 
 import dlLinks from "../../config/downloadURLS.json";
 
-import style from "./Downloads.module.scss"
-
-
 function Downloads() {
   return (
     <TripleTable id="downloads" title="DOWNLOAD">
@@ -19,30 +16,28 @@ function Downloads() {
           Manager &amp; Drive (64 Bit) .zip File
         </ALink>
         <ALink to={dlLinks.windows.manager} id="win_manager">
-          Manager Installer (64 Bit)
+          Manager {dlLinks.windows.managerVersion} Installer (64 Bit) 
         </ALink>
         <ALink to={dlLinks.windows.drive} id="win_drive">
-          Drive Installer (64 Bit)
+          Drive {dlLinks.windows.driveVersion} Installer (64 Bit) 
         </ALink>
-        <span className={style.Version}>Ver. {dlLinks.windows.version}</span>
+        
       </DLCell>
       <DLCell title="Mac" image={appleLogo} id="mac-downloads">
         <ALink to={dlLinks.mac.manager} id="mac_manager">
-          Manager .dmg Installer
+          Manager {dlLinks.mac.managerVersion}.dmg Installer 
         </ALink>
-        <span className={style.Version}>Ver. {dlLinks.windows.version}</span>
       </DLCell>
       <DLCell title="Linux" image={ubuntuLogo} id="linux-downloads">
         <ALink to={dlLinks.linux.both} target="_blank" id="linux_default">
           Manager &amp; Drive .zip File
         </ALink>
         <ALink to={dlLinks.linux.manager} target="_blank" id="linux_manager">
-          Manager .deb Installer
+          Manager {dlLinks.linux.managerVersion}.deb Installer 
         </ALink>
         <ALink to={dlLinks.linux.drive} target="_blank" id="linux_drive">
-          Drive .deb Installer
+          Drive  {dlLinks.linux.driveVersion}.deb Installer
         </ALink>
-        <span className={style.Version}>Ver. {dlLinks.windows.version}</span>
       </DLCell>
     </TripleTable>
   );

@@ -5,8 +5,18 @@
   align-self: flex-start;
   justify-content: center;
   width: 404px;
-  margin-top:85px;
+  margin-top: 85px;
 
+  & .versionBox {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-evenly;
+    & .version {
+      color:#555;
+      font-size: 0.5rem !important;
+    }
+  }
 }
 .main {
   font-size: 0.8rem;
@@ -16,11 +26,10 @@
 }
 
 .dlOther {
-  font-size:0.7rem;
+  font-size: 0.7rem;
   margin-top: 10px;
-  color:#555;
+  color: #555;
 }
-
 
 @media only screen and (max-width: 900px) {
   .buttonbox {
@@ -30,6 +39,6 @@
 }
 @media only screen and (max-width: 500px) {
   .buttonbox {
-    width:auto;
+    width: auto;
   }
 }
