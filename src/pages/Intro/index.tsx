@@ -16,7 +16,7 @@ function Intro() {
     if (platform === "windows") {
       document.getElementById("win_default")?.click();
     } else if (platform === "mac") {
-      document.getElementById("mac_manager")?.click();
+      document.getElementById("mac_default")?.click();
     } else if (platform === "linux") {
       document.getElementById("linux_default")?.click();
     } else {
@@ -24,21 +24,19 @@ function Intro() {
     }
   };
 
-  let platformLabel, driveVerLabel, managerVerLabel;
+  let platformLabel = "DOWNLOAD MANAGER + DRIVE .ZIP";
+  let driveVerLabel, managerVerLabel;
 
   switch (platform) {
     case "mac":
-      platformLabel = "DOWNLOAD MANAGER";
       driveVerLabel = dlLinks.mac.driveVersion;
       managerVerLabel = dlLinks.mac.managerVersion;
       break;
     case "windows":
-      platformLabel = "DOWNLOAD MANAGER + DRIVE .ZIP";
       driveVerLabel = dlLinks.windows.driveVersion;
       managerVerLabel = dlLinks.windows.managerVersion;
       break;
     case "linux":
-      platformLabel = "DOWNLOAD MANAGER + DRIVE .ZIP";
       driveVerLabel = dlLinks.linux.driveVersion;
       managerVerLabel = dlLinks.linux.managerVersion;
       break;

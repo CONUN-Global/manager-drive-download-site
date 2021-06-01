@@ -21,13 +21,20 @@ function Downloads() {
         <ALink to={dlLinks.windows.drive} id="win_drive">
           Drive {dlLinks.windows.driveVersion} Installer (64 Bit) 
         </ALink>
-        
       </DLCell>
+
       <DLCell title="Mac" image={appleLogo} id="mac-downloads">
+      <ALink to={dlLinks.mac.both} id="mac_default">
+          Manager &amp; Drive .zip File
+        </ALink>
         <ALink to={dlLinks.mac.manager} id="mac_manager">
           Manager {dlLinks.mac.managerVersion}.dmg Installer 
         </ALink>
+        <ALink to={dlLinks.mac.drive} id="mac_drive">
+          Drive {dlLinks.mac.driveVersion}.dmg Installer
+        </ALink>
       </DLCell>
+      
       <DLCell title="Linux" image={ubuntuLogo} id="linux-downloads">
         <ALink to={dlLinks.linux.both} target="_blank" id="linux_default">
           Manager &amp; Drive .zip File
