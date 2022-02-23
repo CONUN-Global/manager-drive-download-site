@@ -5,6 +5,7 @@ import TripleTable from "../../components/TripleTable";
 import windowsLogo from "../../assets/windowsLogo.svg";
 import appleLogo from "../../assets/appleLogo.svg";
 import ubuntuLogo from "../../assets/ubuntuLogo.svg";
+import android from "../../assets/android.svg";
 
 import dlLinks from "../../config/downloadURLS.json";
 
@@ -16,35 +17,42 @@ function Downloads() {
           Manager &amp; Drive (64 Bit) .zip File
         </ALink>
         <ALink to={dlLinks.windows.manager} id="win_manager">
-          Manager {dlLinks.windows.managerVersion} Installer (64 Bit) 
+          Manager {dlLinks.windows.managerVersion} Installer (64 Bit)
         </ALink>
         <ALink to={dlLinks.windows.drive} id="win_drive">
-          Drive {dlLinks.windows.driveVersion} Installer (64 Bit) 
+          Drive {dlLinks.windows.driveVersion} Installer (64 Bit)
         </ALink>
       </DLCell>
 
       <DLCell title="Mac" image={appleLogo} id="mac-downloads">
-      <ALink to={dlLinks.mac.both} id="mac_default">
+        <ALink to={dlLinks.mac.both} id="mac_default">
           Manager &amp; Drive .zip File
         </ALink>
         <ALink to={dlLinks.mac.manager} id="mac_manager">
-          Manager {dlLinks.mac.managerVersion}.dmg Installer 
+          Manager {dlLinks.mac.managerVersion}.dmg Installer
         </ALink>
         <ALink to={dlLinks.mac.drive} id="mac_drive">
           Drive {dlLinks.mac.driveVersion}.dmg Installer
         </ALink>
       </DLCell>
-      
+
       <DLCell title="Linux" image={ubuntuLogo} id="linux-downloads">
         <ALink to={dlLinks.linux.both} target="_blank" id="linux_default">
           Manager &amp; Drive .zip File
         </ALink>
         <ALink to={dlLinks.linux.manager} target="_blank" id="linux_manager">
-          Manager {dlLinks.linux.managerVersion}.deb Installer 
+          Manager {dlLinks.linux.managerVersion}.deb Installer
         </ALink>
         <ALink to={dlLinks.linux.drive} target="_blank" id="linux_drive">
-          Drive  {dlLinks.linux.driveVersion}.deb Installer
+          Drive {dlLinks.linux.driveVersion}.deb Installer
         </ALink>
+      </DLCell>
+
+      <DLCell title="Android" image={android} id="android-downloads">
+        <p>Under Development</p>
+      </DLCell>
+      <DLCell title="iOS" image={appleLogo} id="iOS-downloads">
+        <p>Under Development</p>
       </DLCell>
     </TripleTable>
   );
